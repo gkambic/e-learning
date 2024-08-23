@@ -4,9 +4,19 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { mockCourses } from '../../../services/videoMock';
 
+interface Course {
+  id: number;
+  title: string;
+  description: string;
+  duration: string;
+  startDate: string;
+  value: string;
+  imageUrl: string;
+}
+
 export default function CourseDetailPage({ params }: { params: { id: string } }) {
   const { id } = params;
-  const [course, setCourse] = useState(null);
+  const [course, setCourse] = useState<Course | null>(null);
   const router = useRouter();
 
   useEffect(() => {
