@@ -1,0 +1,11 @@
+.header {
+    /* Estilos comunes a todas las páginas */
+    width: 100%;
+    /* Otros estilos */
+  }
+  
+  .homeHeader {
+    position: absolute;
+    z-index: 1000;
+    /* Otros estilos específicos para la página de inicio */
+  }

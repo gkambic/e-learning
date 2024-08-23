@@ -1,0 +1,51 @@
+/* src/components/CourseCard.module.css */
+.cardContainer {
+    width: 25em;
+    margin-bottom: 2em;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardImage {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .cardImage:hover {
+    transform: scale(1.05);
+  }
+  
+  .cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .cardDetails {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .cardContainer {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cardContainer:hover {
+    transform: scale(1.02);
+  }
+
+  .cardFooter {
+    margin-top: 1rem;
+  }
