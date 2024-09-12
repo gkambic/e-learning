@@ -1,7 +1,8 @@
-import { Router } from 'express';
-import { getVideos } from '../controllers/videoController';
-const router = Router();
+import express from 'express';
+import getAllVideos from '../controllers/videoController.js'; // Asegúrate de que esta ruta es correcta
 
-router.get('/', getVideos);
+const router = express.Router();
+
+router.get('/', getAllVideos); // Aquí 'getAllVideos' es la función callback
 
 export default router;
