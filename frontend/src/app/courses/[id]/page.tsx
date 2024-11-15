@@ -28,6 +28,11 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
     router.push(`/enroll/${id}`);
   };
 
+  const handleVideoListClick = () => {
+    localStorage.setItem('courseId', id); // Guarda el ID en localStorage
+    router.push('/videos'); // Navega a la página de videos
+  };
+
   if (!course) return <p>Loading...</p>;
 
   return (
@@ -52,6 +57,21 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
         }}
       >
         Enroll
+      </button>
+      <button
+        onClick={() => handleVideoListClick()}
+        style={{
+          padding: '0.8em 1.6em',
+          fontSize: '1em',
+          color: 'white',
+          backgroundColor: '#0070f3',
+          border: 'none',
+          borderRadius: '4px',
+          cursor: 'pointer',
+          marginTop: '1em',
+        }}
+      >
+        View Video List
       </button>
     </main>
   );

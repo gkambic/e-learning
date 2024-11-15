@@ -42,6 +42,7 @@ export default function VideosPage() {
 "use client";
 
 import { Card } from 'primereact/card';
+import Video from 'next-video';
 
 interface VideoCardProps {
   id: number;
@@ -52,15 +53,9 @@ interface VideoCardProps {
 
 export default function VideoCard({ id, title, description, url }: VideoCardProps) {
   const header = (
-    <iframe
-      width="100%"
-      height="200"
-      src={url.replace('watch?v=', 'embed/')}
-      frameBorder="0"
-      allowFullScreen
-      title={title}
-    />
+    <Video src={'/videos/ejemplo.mp4'} />
   );
+
 
   return (
     <Card title={title} subTitle={description} header={header} style={{ width: '25em', marginBottom: '2em' }}>
