@@ -1,5 +1,4 @@
 
-import Video from 'next-video';
 //import getStarted from '/videos/ejemplo.mp4';
 
 export default function PruebaPage() {
