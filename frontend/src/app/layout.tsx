@@ -5,6 +5,7 @@ import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';  
 import 'primereact/resources/primereact.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import WhatsAppIcon from '@/components/WhatsappIcon';
 
 export default function RootLayout({
   children,
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body className="layout-body">
         <Header />
         <main className="layout-main">{children}</main>
+        <WhatsAppIcon />
         <Footer />
       </body>
     </html>

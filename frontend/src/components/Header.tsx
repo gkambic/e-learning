@@ -48,11 +48,12 @@ const items: MenuItem[] = [
     {
       label: 'Propuestas para familias',
       icon: 'pi pi-home',
-      command: () => router.push("/prueba")
+      command: () => router.push("/familias")
     },
     {
         label: 'Propuestas para profesionales',
-        icon: 'pi pi-star'
+        icon: 'pi pi-star',
+        command: () => router.push("/profesionales")
     },
       {
           label: 'Contact',
