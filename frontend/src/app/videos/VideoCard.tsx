@@ -38,7 +38,7 @@ export default function VideosPage() {
   );
 }
  */
-
+/* 
 "use client";
 
 import { Card } from 'primereact/card';
@@ -64,3 +64,4 @@ export default function VideoCard({ id, title, description, url }: VideoCardProp
 }
 
 
+ */

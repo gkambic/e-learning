@@ -1,4 +1,4 @@
-"use client"; 
+/* "use client"; 
 import { useEffect, useState } from 'react';
 import { mockCourses } from '../../services/coursesMock';
 import VideoCard from './VideoCard';
@@ -64,3 +64,4 @@ const VideosPage = () => {
 };
 
 export default VideosPage;
+ */
